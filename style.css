@@ -752,7 +752,7 @@ animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 .bar .progress-line.js span{
   width: 70%;
   }
-.bar .progress-line.rprg span{
+.bar .progress-line.react span{
   width: 70%;
     }
   
@@ -825,7 +825,7 @@ content: "80%";
 .progress-line.js span::after{
 content: "70%";
 }
-.progress-line.rprg span::after{
+.progress-line.react span::after{
   content: "70%";
   }
 
@@ -857,16 +857,27 @@ content: "95%";
 
   @media (max-width: 768px) {
     .sb {
-      padding-bottom: 0; 
+      padding-bottom: 0;
     }
+  
     .flexsb {
-      flex-direction: column; 
+      flex-direction: column;
+      align-items: center;
     }
+  
     .skill-bars {
-      width: auto; 
-      margin-left: 0; 
+      max-width: 400px; 
+      width: 80%; 
+      margin: 20px auto; 
+    }
+  
+    .skill-bars:nth-child(1) {
+      margin-left: auto; 
     }
   }
+  
+  
+  
   
   
   
@@ -939,6 +950,42 @@ content: "95%";
 
 .exp .timeline .timeline-item:nth-child(even) .icon {
   left: -70px;
+}
+
+
+@media (max-width: 947px) {
+  .exp .timeline {
+    padding: 10px 50px; 
+  }
+
+  .exp .timeline .timeline-item:nth-child(odd),
+  .exp .timeline .timeline-item:nth-child(even) {
+    padding: 30px;
+  }
+
+  .exp .timeline .timeline-item .timeline-item-inner {
+    padding: 20px; 
+  }
+
+  .exp .timeline .timeline-item:nth-child(odd) {
+    padding-right: 30px; 
+    text-align: right; 
+  }
+
+  .exp .timeline .timeline-item:nth-child(even) {
+    padding-left: 30px;
+    text-align: left; 
+  }
+
+  .exp .timeline .timeline-item:nth-child(odd) .icon {
+    right: auto; 
+    left: -30px; 
+  }
+
+  .exp .timeline .timeline-item:nth-child(even) .icon {
+    left: auto; 
+    right: -30px; 
+  }
 }
 
 
