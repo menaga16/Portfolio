@@ -666,14 +666,14 @@ footer span a:hover {
 }
 .flexsb{
   display: flex; 
-  justify-content: space-between; 
+  justify-content: space-evenly; 
   margin-bottom: 30px;
 
 
 }
 .skills .max-width {
   width: 100%; 
-  margin: 5%; 
+  margin-left: 0; 
   padding: 0; 
 }
 
