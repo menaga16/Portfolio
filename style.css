@@ -752,7 +752,7 @@ animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 .bar .progress-line.js span{
   width: 70%;
   }
-.bar .progress-line.c++ span{
+.bar .progress-line.cpp span{
   width: 80%;
     }
   
@@ -825,7 +825,7 @@ content: "80%";
 .progress-line.js span::after{
 content: "70%";
 }
-.progress-line.c++ span::after{
+.progress-line.cpp span::after{
   content: "80%";
   }
 
