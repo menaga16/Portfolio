@@ -825,8 +825,8 @@ content: "80%";
 .progress-line.js span::after{
 content: "70%";
 }
-.progress-line.react span::after{
-  content: "70%";
+.progress-line.c++ span::after{
+  content: "80%";
   }
 
 .progress-line.html span::after{
